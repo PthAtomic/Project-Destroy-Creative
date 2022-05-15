@@ -1,0 +1,9 @@
+multipro = FindItemID("increase")
+
+
+while true do
+SendPacket(2, "action|dialog_return\ndialog_name|item_search\n"..multipro.."|1")
+Sleep(200)
+SendPacket(2, "action|dialog_return\ndialog_name|drop\nitem_drop|"..multipro.."|\nitem_count|250")
+Sleep(200)
+end
